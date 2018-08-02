@@ -7,9 +7,7 @@ app.config.from_object(DevConfig)
 @app.route('/')
 def htmo():
     return '<h1>Hello World!</h1>'
-@app.route('/c')
-def home():
-    return '<h1>Hello C!</h1>'
+
 
 if __name__ == '__main__':
     app.run()
