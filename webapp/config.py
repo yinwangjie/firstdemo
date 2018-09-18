@@ -1,7 +1,9 @@
 import tempfile
 
 class Config(object):
-    pass
+    CSRF_ENABLED = True
+    SECRET_KEY = "623f3768bfebbe1ea2cc03ea2aa5baef"
+    #cat /dev/urandom | tr -cd 'a-f0-9' | head -c 32在Bush中生成秘钥的指令
 
 class ProdConfig(Config):
     pass
